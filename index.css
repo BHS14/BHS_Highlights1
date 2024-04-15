@@ -1,0 +1,755 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap')
+
+
+
+/*  
+Logo color codes
+#6976c4 - lighter blue
+495cab - darker blue
+fffec6 - light yellow
+fcc97a
+221e12
+-- menu bg 202c5c
+*/
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+p, h1,  h2, h3, h4, h5, h6{
+  color: #252525;
+}
+
+p{
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  color: #252525;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+  min-width: 100%;
+}
+
+/* @media - use this as an indicator for the different screen sizes*/
+
+/* for phones and other narrow screen sizes */
+@media (min-width: 280px) and (max-width:540px){
+  body{
+    background-color: white;
+  }
+}
+
+/* @media END */
+
+
+.flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flexcol {
+  flex-direction: column;
+}
+
+.flexrow {
+  flex-direction: row;
+}
+
+.flexwrap{
+  flex-wrap: wrap;
+}
+
+.center{
+  margin: auto;
+  text-align: center;
+}
+/*  */
+@font-face {
+  font-family: Inter;
+  src: url(fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+
+/*  */
+#header{
+  background-color: #727ea1;
+  padding: 0%;
+}
+
+
+#logo{
+  height: 50%;
+  width: 50%;
+}
+
+/*  */
+#purpose{
+  background-color: #A5AAC4;
+  padding: 3%;
+}
+
+#purpose h2{
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  letter-spacing: 4px;
+  font-size: 200%;
+  color: #252525;
+
+  /* cursor */
+  cursor: default;
+}
+
+
+#purpose p{
+ 
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  text-align: center; 
+  padding: 10px;
+  font-size: 100%;
+  margin-left: 5%;
+  margin-right: 5%;
+  color: #252525;
+}
+
+/* @media/purpose */
+
+@media (min-width: 280px) and (max-width:540px){
+  
+  #logo{
+    height: 100%;
+    width: 100%;
+  }
+  
+  #purpose h2{
+    text-align: center;
+    letter-spacing: 3px;
+    font-size: 175%;
+    font-weight: 400;
+    color: #252525;
+
+    /* cursor */
+    cursor: default;
+  }
+
+  #purpose p{
+    text-align: center; 
+    padding: 10px;
+    font-size: 125%;
+    margin-left: 5%;
+    margin-right: 5%;
+    color: #252525;
+  }
+  
+}
+
+
+/* SKINNY PHONE SPECIAL CASE */
+@media (min-width: 280px) and (max-width:284px){
+  
+  #logo{
+    height: 100%;
+    width: 100%;
+  }
+  
+  #purpose h2{
+    text-align: center;
+    letter-spacing: 3px;
+    font-size: 135%;
+    font-weight: 400;
+    color: #252525;
+
+    /* cursor */
+    cursor: default;
+  }
+
+  #purpose p{
+    text-align: center; 
+    padding: 10px;
+    font-size: 110%;
+    margin-left: 5%;
+    margin-right: 5%;
+    color: #252525;
+  }
+
+}
+
+/* PURPOSE DIV END */
+
+/*  STUDENTS DIV!*/
+/*  */
+#students{
+  background-color: #E5CA96;
+  padding: 3%;
+}
+
+#students h2{
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  text-align: center;
+  letter-spacing: 3px;
+  font-size: 175%;
+  font-weight: 400;
+  color: #252525;
+
+  /* cursor */
+  cursor: default;
+}
+
+
+#students img{
+  height: 50%;
+  width: 50%;
+
+  /* height: 200px;
+  width: 200px; */
+  margin: 0% 45% 15% 45%;
+}
+
+/* dynamics */
+#students img:hover{
+  cursor:pointer;
+}
+
+/* diamond format */
+.image_margin{
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top: -15%;
+}
+
+.image_position_top{
+  position: relative;
+  bottom: 75px;
+  top: 75px;
+}
+
+.image_position_bottom{
+  position: relative;
+  bottom: 75px;
+}
+
+
+/* CUBE TURN */
+#whole {
+    -webkit-perspective: 800;
+    -webkit-perspective-origin: 50% 200px;
+
+    -moz-perspective: 800;
+    -moz-perspective-origin: 50% 200px;
+}
+
+.cube{
+    position: relative;
+    margin: 100px auto 0;
+    height: 300px;
+    width: 300px;
+    -webkit-transition: -webkit-transform .5s linear;
+    -webkit-transform-style: preserve-3d;
+
+    -moz-transition: -moz-transform .5s linear;
+    -moz-transform-style: preserve-3d;
+}
+
+.face {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    padding: 0px;
+    font-size: 27px;
+    line-height: 1em;
+    color: #fff;
+    /* border: 1px solid #555;
+    border-radius: 3px; */
+}
+.face p{
+  width:80%;
+  color: #252525;
+}
+.cube .front {
+    -webkit-transform: translateZ(150px);
+    -moz-transform: translateZ(150px);
+    background-color:white;
+}
+
+.cube .side {
+    -webkit-transform: rotateY(-90deg) translateZ(150px);
+    -moz-transform: rotateY(-90deg) translateZ(150px);
+    background-color:#727482;
+}
+/* rotate x here move face black up */
+.cube:hover{
+    -webkit-transform:rotateY(90deg);     
+}
+
+
+.img_fill{
+  overflow: hidden;
+  min-height: 100%;
+  min-width: 100%;
+  margin: auto !important;
+  object-fit: cover;
+}
+
+.desc{
+  font-family: "Bebas Neue", sans-serif;
+  color: #252525;
+  font-size: 90%;
+  line-height: 30px;
+  position:absolute;
+  top:75px;
+  /*  look more into centering the text*/
+}
+
+@media (min-width: 280px) and (max-width:540px){
+
+
+  #students h2{
+    text-align: center;
+    letter-spacing: 3px;
+    font-size: 200%;
+    font-weight: 400;
+    color: #252525;
+
+    /* cursor */
+    cursor: default;
+  }
+
+
+  #students img{
+    height: 45%;
+    width: 45%;
+    
+    border: 2px solid black;
+    /* border to see the image because i didn't realize that the image's sky is literaly white ADSKLJ */
+    margin: 0% 10% 45% 10%;
+  }
+
+  /* dynamics */
+  #students img:hover{
+    cursor:pointer;
+  }
+
+  .image_margin{
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: -35%;
+  }
+
+  /* CUBE TURN */
+  #whole {
+      -webkit-perspective: 800;
+      -webkit-perspective-origin: 50% 200px;
+
+      -moz-perspective: 800;
+      -moz-perspective-origin: 50% 200px;
+  }
+
+  .cube{
+      position: relative;
+      margin: 100px auto 0;
+      height: 150px;
+      width: 150px;
+      -webkit-transition: -webkit-transform .5s linear;
+      -webkit-transform-style: preserve-3d;
+
+      -moz-transition: -moz-transform .5s linear;
+      -moz-transform-style: preserve-3d;
+  }
+
+  .face {
+      position: absolute;
+      height: 150px;
+      width: 150px;
+      padding: 0px;
+      font-size: 27px;
+      line-height: 1em;
+      color: #fff;
+      border: 1px solid #555;
+      border-radius: 3px;
+  }
+
+  .cube .front {
+      -webkit-transform: translateZ(150px);
+      -moz-transform: translateZ(150px);
+      background-color:black;
+  }
+
+  .cube .side {
+      -webkit-transform: rotateY(-90deg) translateZ(150px);
+      -moz-transform: rotateY(-90deg) translateZ(150px);
+      background-color:#d6d6d6;
+  }
+  /* rotate x here move face black up */
+  .cube:hover{
+      -webkit-transform:rotateY(90deg);     
+  }
+  
+}
+
+
+/* SKINNY PHONE SPECIAL CASE */
+@media (min-width: 280px) and (max-width:284px){
+
+  #students{
+    background-color: white;
+    padding: 1%;
+  }
+  
+  #students img{
+    height: 45%;
+    width: 45%;
+
+    border: 2px solid black;
+    /* border to see the image because i didn't realize that the image's sky is literaly white ADSKLJ */
+    margin: 0% 10% 65% 10%;
+  }
+
+  /* dynamics */
+  #students img:hover{
+    cursor:pointer;
+  }
+
+  .image_margin{
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: -50%;
+  }
+
+  /* CUBE TURN */
+  #whole {
+      -webkit-perspective: 800;
+      -webkit-perspective-origin: 50% 200px;
+
+      -moz-perspective: 800;
+      -moz-perspective-origin: 50% 200px;
+  }
+
+  .cube{
+      position: relative;
+      margin: 100px auto 0;
+      height: 100px;
+      width: 100px;
+      -webkit-transition: -webkit-transform .5s linear;
+      -webkit-transform-style: preserve-3d;
+
+      -moz-transition: -moz-transform .5s linear;
+      -moz-transform-style: preserve-3d;
+  }
+
+  .face {
+      position: absolute;
+      height: 100px;
+      width: 100px;
+      padding: 0px;
+      font-size: 27px;
+      line-height: 1em;
+      color: #fff;
+      border: 1px solid #555;
+      border-radius: 3px;
+  }
+
+  .cube .front {
+      -webkit-transform: translateZ(150px);
+      -moz-transform: translateZ(150px);
+      background-color:black;
+  }
+
+  .cube .side {
+      -webkit-transform: rotateY(-90deg) translateZ(150px);
+      -moz-transform: rotateY(-90deg) translateZ(150px);
+      background-color:#d6d6d6;
+  }
+  /* rotate x here move face black up */
+  .cube:hover{
+      -webkit-transform:rotateY(90deg);     
+  }
+
+}
+
+
+
+/* STUDENTS DIV END  */
+/*  */
+#footer{
+  background-color: #47557F;
+  padding: 3%;
+}
+
+#footer button{
+  border-radius: 100px;
+  font-family: "Bebas Neue", sans-serif;
+  background-color: #F0E29B;
+  border: none;
+  padding: 1% 2% 1% 2%;
+  /* text property */
+  color:white;
+  text-shadow: 1px 1px black;
+  font-size: 150%;
+  text-align: center;
+  /* positioning */
+  margin-left: 1%;
+  margin-right: 1%;
+
+}
+
+/* dynamics*/
+
+#footer button:hover{
+  /* transition time */
+  transition: 0.5s;
+  transition-timing-function: ease-in-out;
+  /*  */
+  cursor: pointer;
+  font-size: 170%;
+  box-shadow: 0px 0px 10px #F8F6F0;
+
+}
+
+#footer button:not(:hover){
+  /* transition time */
+  transition: 0.5s;
+  transition-timing-function: ease-in-out;
+  /*  */
+}
+/*  */
+
+ion-icon{
+  color: #252525; 
+  width: 35px; 
+  height: 35px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+@media (min-width: 285px) and (max-width:540px){
+
+  #footer button{
+    border-radius: 100px;
+    border: none;
+    padding: 3% 5% 3% 5%;
+    /* text property */
+    font-size: 120%;
+    text-align: center;
+    /* positioning */
+    margin-left: 1%;
+    margin-right: 1%;
+
+  }
+
+  /* dynamics*/
+
+  #footer button:hover{
+    /* transition time */
+    transition: 0.5s;
+    transition-timing-function: ease-in-out;
+    /*  */
+    cursor: pointer;
+    font-size: 118%;
+    box-shadow: 0px 0px 15px #ffffff;
+
+  }
+
+  #footer button:not(:hover){
+    /* transition time */
+    transition: 0.5s;
+    transition-timing-function: ease-in-out;
+    /*  */
+  }
+  
+  /*  */
+
+  ion-icon{
+    color: #252525; 
+    width: 25px; 
+    height: 25px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  
+}
+
+/* SPECIAL CASE FOR THE GALAXY FOLD // THE PHONES TOO SKINNY */
+@media (min-width: 280px) and (max-width:284px){
+
+#footer button{
+  border-radius: 100px;
+  border: none;
+  padding: 3% 5% 3% 5%;
+  /* text property */
+  font-size: 95%;
+  text-align: center;
+  /* positioning */
+  margin-left: 1%;
+  margin-right: 1%;
+
+}
+
+/* dynamics*/
+
+#footer button:hover{
+  /* transition time */
+  transition: 0.5s;
+  transition-timing-function: ease-in-out;
+  /*  */
+  cursor: pointer;
+  font-size: 98%;
+  box-shadow: 0px 0px 15px #ffffff;
+
+}
+
+#footer button:not(:hover){
+  /* transition time */
+  transition: 0.5s;
+  transition-timing-function: ease-in-out;
+  /*  */
+}
+
+/*  */
+  ion-icon{
+    color: #252525; 
+    width: 20px; 
+    height: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+}
+
+/* end of media  */
+
+
+/* USED TUTORIAL: https://youtu.be/1TZjgQ0Osic?si=5nkqBtrg11tdUq_7  */
+/* MENU STYLINGS */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.menu{
+  height: 100%; 
+  width: 180px; 
+  position: absolute;
+  background-color:#adb5bd;;
+  transition: 0.5s ease;
+  transform: translateX(-180px);
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings:"slnt" 0;
+}
+.menu h1{
+  text-align:right;
+  padding: 10px 0;
+  padding-right: 25px;
+  pointer-events: none;
+  padding-top:15px;
+  color: #252525;
+}
+.menuTitle{
+  color: black;
+  font-weight: 800;
+}
+ul li{
+  list-style: none;
+} 
+
+ul li a{
+  color: black; 
+  font-weight: 500;
+  padding: 15px 0;
+  display:block; 
+  text-transform: capitalize; 
+  text-decoration: none;
+  transition: 0.2s ease-out;
+}
+ul li:hover a{
+  background-color: white;
+  color: black;
+}
+
+ul li a i{
+  width: 40px;
+  text-align: center;
+  
+}
+
+input{
+  display:none;
+  visibility: hidden;
+  -webkit-appearance: none;
+}
+.toggle{
+  position: absolute;
+  height: 37px;
+  width: 37px;
+  top: 20px;
+  left: 15px;
+  z-index: 1;
+  cursor: pointer;
+  border-radius: 2px;
+  background-color:#aab0ca;
+  box-shadow: 0 0 8px rgba(0,0,0,0.3);
+  
+}
+.toggle .common{
+  position: absolute;
+  height: 2px;
+  width:25px;
+  background-color:black;
+  border-radius:50px;
+  transition: 0.3s ease;
+}
+.toggle .t-line{
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.toggle .m-line{
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.toggle .b-line{
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+input:checked ~ .toggle .t-line{
+  left: 2px;
+  top:14px;
+  width:31px;
+  transform: rotate(45deg);
+}
+input:checked ~ .toggle .m-line{
+  opacity:0;
+  transform: translateX(20px);
+}
+input:checked ~ .toggle .b-line{
+  left: 2px;
+  top:14px;
+  width:31px;
+  transform: rotate(-45deg);
+}
+input:checked ~ .menu{
+  transform: translateX(0);
+  box-shadow: 0 0 10px rgba(0,0,0,0.5); 
+  }
+
+/* https://www.w3schools.com/css/css3_box-sizing.asp */
+/* END MENU STYLINGS */
+
+/* REEVALUATE IF NEEDED */
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .menu {padding-top: 15px;}
+    .menu a {font-size: 18px;}
+  }
+
+

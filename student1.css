@@ -1,0 +1,416 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Inter:wght@100..900&display=swap'); 
+
+p, h1,  h2, h3, h4, h5, h6{
+  color: #252525;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+  min-width: 100%;
+}
+
+.flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flexcol {
+  flex-direction: column;
+}
+
+.flexrow {
+  flex-direction: row;
+}
+
+.flexwrap{
+  flex-wrap: wrap;
+}
+
+.center{
+  margin: auto;
+  text-align: center;
+}
+/*  */
+@font-face {
+  font-family: Inter;
+  src: url(fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+h2{
+  font-family:"Inter";
+  text-align: center;
+  font-size: 250%;
+  letter-spacing: 3px;
+}
+
+
+.button_font{
+  margin-left: 30%;
+  margin-right: 30%;
+  background-color: gray;
+  border-radius: 20px;
+  padding: 2% 2% 2% 2%;
+  /* padding: 1px 1px 1px 1px; */
+  color:black;
+  font-family: "Inter";
+  font-size: 175%;
+  text-align: center;
+  text-decoration: none;
+  cursor:pointer;
+}
+
+
+/*  socials */
+
+
+#socials{
+  padding: 5%;
+  margin: 5%;
+  border-radius: 50px;
+  background-color: rgba(48,24,67, 0.5);
+}
+
+
+img{
+  /* width: 10%;
+  height: 10%; */
+  margin: auto;
+}
+
+.socials_link{
+  font-family: "Inter";
+  font-size: 125%;
+}
+
+.button_font{
+  margin-left: 30%;
+  margin-right: 30%;
+  background-color: gray;
+  border-radius: 20px;
+  padding: 2% 2% 2% 2%;
+  /* padding: 1px 1px 1px 1px; */
+  color:black;
+  font-family: "Inter";
+  font-size: 175%;
+  text-align: center;
+  text-decoration: none;
+  cursor:pointer;
+}
+
+
+/* USED TUTORIAL: https://youtu.be/1TZjgQ0Osic?si=5nkqBtrg11tdUq_7  */
+/* MENU STYLINGS */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.menu{
+  height: 100%; 
+  width: 180px; 
+  position: absolute;
+  background-color:#d9d9d9;
+  transition: 0.5s ease;
+  transform: translateX(-180px);
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings:"slnt" 0;
+}
+.menu h1{
+  text-align:right;
+  padding: 10px 0;
+  padding-right: 25px;
+  pointer-events: none;
+  padding-top:15px;
+}
+.menuTitle{
+  color: black;
+  font-weight: 800;
+}
+ul li{
+  list-style: none;
+} 
+
+ul li a{
+  color: black; 
+  font-weight: 500;
+  padding: 15px 0;
+  display:block; 
+  text-transform: capitalize; 
+  text-decoration: none;
+  transition: 0.2s ease-out;
+}
+ul li:hover a{
+  background-color: black;
+  color: #d6d6d6;
+}
+
+ul li a i{
+  width: 40px;
+  text-align: center;
+
+}
+
+input{
+  display:none;
+  visibility: hidden;
+  -webkit-appearance: none;
+}
+.toggle{
+  position: absolute;
+  height: 37px;
+  width: 37px;
+  top: 20px;
+  left: 15px;
+  z-index: 1;
+  cursor: pointer;
+  border-radius: 2px;
+  background-color:#d6d6d6;
+  box-shadow: 0 0 8px rgba(0,0,0,0.3);
+
+}
+.toggle .common{
+  position: absolute;
+  height: 2px;
+  width:25px;
+  background-color:black;
+  border-radius:50px;
+  transition: 0.3s ease;
+}
+.toggle .t-line{
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.toggle .m-line{
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.toggle .b-line{
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+input:checked ~ .toggle .t-line{
+  left: 2px;
+  top:14px;
+  width:31px;
+  transform: rotate(45deg);
+}
+input:checked ~ .toggle .m-line{
+  opacity:0;
+  transform: translateX(20px);
+}
+input:checked ~ .toggle .b-line{
+  left: 2px;
+  top:14px;
+  width:31px;
+  transform: rotate(-45deg);
+}
+input:checked ~ .menu{
+  transform: translateX(0);
+  box-shadow: 0 0 10px rgba(0,0,0,0.5); 
+  }
+
+/* https://www.w3schools.com/css/css3_box-sizing.asp */
+/* END MENU STYLINGS */
+
+p{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0;
+}
+#text{
+  width:70%;
+  margin-left: 30px;
+}
+
+#content{
+  align-items: flex-start;
+  justify-content:space-between;
+  margin-left:40px;
+  margin-right:40px;
+}
+
+/*  */
+#footer{
+  background-color: #47557F;
+  padding: 3%;
+}
+
+#footer button{
+  border-radius: 100px;
+  font-family: "Bebas Neue", sans-serif;
+  background-color: #F0E29B;
+  border: none;
+  padding: 1% 2% 1% 2%;
+  /* text property */
+  color:white;
+  text-shadow: 1px 1px black;
+  font-size: 150%;
+  text-align: center;
+  /* positioning */
+  margin-left: 1%;
+  margin-right: 1%;
+
+}
+
+/* dynamics*/
+
+#footer button:hover{
+  /* transition time */
+  transition: 0.5s;
+  transition-timing-function: ease-in-out;
+  /*  */
+  cursor: pointer;
+  font-size: 170%;
+  box-shadow: 0px 0px 10px #F8F6F0;
+
+}
+
+#footer button:not(:hover){
+  /* transition time */
+  transition: 0.5s;
+  transition-timing-function: ease-in-out;
+  /*  */
+}
+/*  */
+
+ion-icon{
+  color: #252525; 
+  width: 35px; 
+  height: 35px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+@media (min-width: 285px) and (max-width:540px){
+
+  #footer button{
+    border-radius: 100px;
+    border: none;
+    padding: 3% 5% 3% 5%;
+    /* text property */
+    font-size: 120%;
+    text-align: center;
+    /* positioning */
+    margin-left: 1%;
+    margin-right: 1%;
+
+  }
+
+  /* dynamics*/
+
+  #footer button:hover{
+    /* transition time */
+    transition: 0.5s;
+    transition-timing-function: ease-in-out;
+    /*  */
+    cursor: pointer;
+    font-size: 118%;
+    box-shadow: 0px 0px 15px #ffffff;
+
+  }
+
+  #footer button:not(:hover){
+    /* transition time */
+    transition: 0.5s;
+    transition-timing-function: ease-in-out;
+    /*  */
+  }
+
+  /*  */
+
+  ion-icon{
+    color: #252525; 
+    width: 25px; 
+    height: 25px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+}
+
+/* SPECIAL CASE FOR THE GALAXY FOLD // THE PHONES TOO SKINNY */
+@media (min-width: 280px) and (max-width:284px){
+
+#footer button{
+  border-radius: 100px;
+  border: none;
+  padding: 3% 5% 3% 5%;
+  /* text property */
+  font-size: 95%;
+  text-align: center;
+  /* positioning */
+  margin-left: 1%;
+  margin-right: 1%;
+
+}
+
+/* dynamics*/
+
+#footer button:hover{
+  /* transition time */
+  transition: 0.5s;
+  transition-timing-function: ease-in-out;
+  /*  */
+  cursor: pointer;
+  font-size: 98%;
+  box-shadow: 0px 0px 15px #ffffff;
+
+}
+
+#footer button:not(:hover){
+  /* transition time */
+  transition: 0.5s;
+  transition-timing-function: ease-in-out;
+  /*  */
+}
+
+/*  */
+  ion-icon{
+    color: #252525; 
+    width: 20px; 
+    height: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+}
+
+/* end of media  */
+
+.pAndi{
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+}
+.pAndi img{
+  flex:1;
+  margin-left: 3px;
+  margin-right: 3px;
+  margin-top:5px;
+}
+.pAndi p{
+  flex:2;
+  margin-left: 40px;
+  margin-right:40px;
+}
+.student_info{
+  width:70%;
+  margin-left: 50px;
+  margin-right: 50px;
+  background-color:#d9d9d9;
+  padding-top:10px;
+  padding-bottom:10px;
+  padding-right: 10px;
+  padding-left:10px;
+ } 

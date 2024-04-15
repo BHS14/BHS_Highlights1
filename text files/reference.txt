@@ -1,0 +1,72 @@
+Figma Planner: https://www.figma.com/file/jzrZLNYUBqHScBc78woGxo/BHS-Highlights?type=design&node-id=0-1&mode=design&t=ojiRSIdoD4NzPRmW-0
+
+
+
+Pages To Do: Specify which pages you would like to do with your name - we will fine tune them together 
+
+Homepage - Rachel
+
+Contact Us - https://wpforms.com/how-to-make-an-outstanding-contact-us-page-with-8-examples/ ---- samples
+Our Students - Nadia 
+Individual Student Pages - Split between us
+- can do an about staff page 
+
+- need to do a media page in addition: place for video interviews/podcasts for future (Coming soon...)
+
+HTML PORTION  
+
+/1 lay out html with approprate classes/id labels for flexbox 
+/2) create a reference key in this .txt file to keep track of id/class names and their functions 
+/3) Recap together through a phone call/text - Deadline for HTML is ideally 3/16 but can be changed 
+
+- PROGRESS UPDATE WITH MS RIVERA IS 3/18 
+- ON TRACK FOR FINAL DEADLINE OF 4/8
+
+NOTE: @media to help with different screen size
+      add 25% more to font-size when the screen size is under the phone size
+
+
+COPY & PASTE
+
+NORMAL PHONE
+@media (min-width: 285px) and (max-width:540px){}
+__________________________________________
+
+___________________________________________
+SKINNY PHONE
+@media (min-width: 280px) and (max-width:284px){}
+___________________________________________
+
+REFERENCE KEY
+
+ids
+__________________
+header
+purpose
+students
+  img1
+  img2
+  img3
+  img4
+footer
+
+
+class
+___________________
+flex
+flexrow = row
+flexcol = column
+flexwrap = wrap
+
+https://ionic.io/ionicons - icon reference 
+
+PERSONAL NOTES - NADIA
+- edits to be made to home screen- create title on top (same place as nav bar) to fill in blank space and have that positition absolute (stays on screen even when you scroll)- tbd - wait unitl we get logo back 
+- center x in menu
+- push content to side to adapt with menu opening/closing
+https://paulrhayes.com/animated-css3-cube-interface-using-3d-transforms/
+https://stackoverflow.com/questions/16623976/animated-cube-like-only-two-faces-effect-with-css3
+https://jsfiddle.net/3S37r/1/
+- birng cube animation down instead of to the side
+
+https://css-tricks.com/almanac/properties/p/perspective/
