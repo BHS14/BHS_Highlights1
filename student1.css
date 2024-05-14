@@ -394,13 +394,13 @@ ion-icon{
   align-items:center;
 }
 .pAndi img{
-  flex:1;
+
   margin-left: 3px;
   margin-right: 3px;
   margin-top:5px;
 }
 .pAndi p{
-  flex:2;
+  flex:1;
   margin-left: 40px;
   margin-right:40px;
 }
