@@ -288,6 +288,7 @@ html {
 
 .img_fill{
   overflow: hidden;
+  object-position: center 15%;
   min-height: 100%;
   min-width: 100%;
   margin: auto !important;

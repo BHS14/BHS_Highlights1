@@ -414,3 +414,40 @@ ion-icon{
   padding-right: 10px;
   padding-left:10px;
  } 
+#explore{
+  border-radius: 100px;
+  font-family: "Bebas Neue", sans-serif;
+  background-color: #F0E29B;
+  border: none;
+  padding: 1% 2% 1% 2%;
+  /* text property */
+  color:white;
+  text-shadow: 1px 1px black;
+  font-size: 150%;
+  text-align: center;
+  /* positioning */
+  margin-left: 1%;
+  margin-right: 1%;
+
+}
+
+/* dynamics*/
+
+#explore:hover{
+  /* transition time */
+  transition: 0.5s;
+  transition-timing-function: ease-in-out;
+  /*  */
+  cursor: pointer;
+  font-size: 170%;
+  box-shadow: 0px 0px 10px #F8F6F0;
+
+}
+
+#explore:not(:hover){
+  /* transition time */
+  transition: 0.5s;
+  transition-timing-function: ease-in-out;
+  /*  */
+}
+/*  */

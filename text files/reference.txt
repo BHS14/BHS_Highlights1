@@ -25,6 +25,12 @@ HTML PORTION
 NOTE: @media to help with different screen size
       add 25% more to font-size when the screen size is under the phone size
 
+IMPORTANT: 
+
+cover images will have a 4:5 aspect ratio
+
+
+
 
 COPY & PASTE
 
