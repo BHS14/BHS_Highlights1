@@ -23,7 +23,9 @@ html {
 .flexrow {
   flex-direction: row;
 }
-
+.reverse{
+  flex-direction: row-reverse;
+}
 .flexwrap{
   flex-wrap: wrap;
 }
